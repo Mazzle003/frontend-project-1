@@ -17,13 +17,19 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link href="/Starter/style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
 
     <title>Product preview card component</title>
 </head>
 <body>
     <div class="container">
-        <div class="product_image" role="img" aria-label="perfume-display"></div>
+        <div class="image-box">
+            <img class="product_image-desktop" src="/assets/images/image-product-desktop.jpg" role="img"
+                aria-label="perfume-display" />
+            <img class="product_image-mobile" src="/assets/images/image-product-mobile.jpg" role="img"
+                aria-label="perfume-display" />
+        </div>
+
         <div class="product_details">
             <h1 class="perfume">Perfume</h1>
             <h2 class="perfume-name">Gabrielle Essence Eau De Parfum</h2>
@@ -34,7 +40,7 @@
                 <span class="slashed-price">$169.99</span>
             </div>
             <div class="cta">
-                <img src="../product-preview-card-component-main/images/icon-cart.svg" alt="shopping-icon" class="cta-icon">
+                <img src="./assets/images/icon-cart.svg" alt="shopping-icon" class="cta-icon">
                 <span class="cta-text">Add to Cart</span>
             </div>
         </div>
